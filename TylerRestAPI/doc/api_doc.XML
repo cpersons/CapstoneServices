@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="api_doc.XSL"?>
+<?xml-stylesheet type="text/xsl" href="api_doc.xsl"?>
 <doc>
     <assembly>
         <name>TylerRestAPI</name>
@@ -164,6 +164,17 @@
             </summary>
             <param name="id">Integer of category ID to delete</param>
             <returns name="result">Boolean TRUE if delete is successful, FALSE if the delete fails or the category isn't found.</returns>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.getRemindersToday">
+            <name>Get Email Reminders For Today</name>
+            <method>GET</method>
+            <path>/TylerApiImpl.svc/reports/reminderToday</path>
+            <summary>
+            Returns a list of all the Email Reminders which are supposed to be sent today.
+            *NOTE* This REST call is only added for function demonstration in video; the function
+            normally runs automatically on the server every day.
+            </summary>
+            <returns name="reminders">JSON string of the email reminders due today</returns>
         </member>
     </members>
 </doc>

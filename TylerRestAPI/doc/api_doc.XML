@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TylerRestAPI</name>
+    </assembly>
+    <members>
+        <member name="T:TylerRestAPI.TylerApiFacade">
+            <summary>
+            Facade for Tyler Reporting RESTful API
+            </summary>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.getStatus">
+            <name>Status</name>
+            <method>GET</method>
+            <path>/</path>
+            <summary>
+            Method provided as a status check to verify the service is operation.
+            </summary>
+            <returns name="status">String "Ok"</returns>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.getReports">
+            <name>Get All Reports</name>
+            <method>GET</method>
+            <path>/TylerApiImpl.svc/reports</path>
+            <summary>
+            Returns all reports.
+            </summary>
+            <returns name="report">JSON serialized list of reports.</returns>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.getReportById(System.String)">
+            <name>Lookup Report By ID</name>
+            <method>GET</method>
+            <path>/TylerApiImpl.svc/reports/reportById/{id}</path>
+            <summary>
+            Returns a report for a given ID, empty response if the report doesn't exist.
+            </summary>
+            <param name="id">Integer of report ID to lookup</param>
+            <returns name="report">JSON serialized report.</returns>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.getReportsByUserId(System.String)">
+            <name>Lookup Reports By User ID</name>
+            <method>GET</method>
+            <path>/TylerApiImpl.svc/reports/reportsByUserId/{id}</path>
+            <summary>
+            Returns a list of reports associated with a user based on his or her role.
+            </summary>
+            <param name="id">int of the user's ID</param>
+            <returns name="report">JSON serialized list of reports.</returns>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.getUpcomingReportsForUser(System.String)">
+            <name>Get Upcoming Reports for User</name>
+            <method>GET</method>
+            <path>/TylerApiImpl.svc/reports/upcomingReportsByUserId/{id}</path>
+            <summary>
+            Returns a list of the next ten reports do for a user;
+            </summary>
+            <param name="id">int of the user's ID</param>
+            <returns name="report">JSON serialized list of reports.</returns>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.persistReport(System.IO.Stream)">
+            <name>Add a Report</name>
+            <method>POST</method>
+            <path>/TylerApiImpl.svc/reports/addReport</path>
+            <summary>
+            Persists a new report to the database.
+            </summary>
+            <param name="reportJson">a JSON String of the report to be added.</param>
+            <returns name="id">Int ID of the report after it is added, -1 if the report was not successfully added.</returns>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.updateReport(System.IO.Stream)">
+            <name>Update a Report</name>
+            <method>PUT</method>
+            <path>/TylerApiImpl.svc/reports/updateReport</path>
+            <summary>
+            Updates an existing report with matching ID
+            </summary>
+            <param name="reportJson">a JSON String of the report to be updated.</param>
+            <returns name="id">Int ID of the report if it is updated, -1 if the report was not successfully updated.</returns>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.addEmailReminderToReport(System.IO.Stream)">
+            <name>Add Email Reminder</name>
+            <method>POST</method>
+            <path>/TylerApiImpl.svc/reports/addEmailReminder</path>
+            <summary>
+            Add an email reminder to a report
+            </summary>
+            <param name="reminder">a JSON String of the email reminder to add.</param>
+            <returns name="id">int ID of the email reminder if it is added successfully, -1 if it is not.</returns>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.removeEmailReminderFromReport(System.String)">
+            <name>Remove Email Reminder</name>
+            <method>DELETE</method>
+            <path>/TylerApiImpl.svc/reports/removeEmailReminder/{id}</path>
+            <summary>
+            Remove an email reminder form a report
+            </summary>
+            <param name="id">int ID of the reminder object to remove</param>
+            <returns name="result">bool TRUE if the reminder is successfully removed, FALSE if it was not removed or didn't exist.</returns>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.deleteReport(System.String)">
+            <name>Delete a Report By ID</name>
+            <method>DELETE</method>
+            <path>/TylerApiImpl.svc/reports/deleteReport/{id}</path>
+            <summary>
+            Deletes a report by ID
+            </summary>
+            <param name="id">Integer of report ID to delete</param>
+            <returns name="result">Boolean TRUE if delete is successful, FALSE if the delete fails or the report isn't found.</returns>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.getStates">
+            <name>Get States</name>
+            <method>GET</method>
+            <path>/TylerApiImpl.svc/states</path>
+            <summary>
+            Returns all states
+            </summary>
+            <returns name="states">JSON array of all states stored in the database</returns>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.getCategories">
+            <name>Get Categories</name>
+            <method>GET</method>
+            <path>/TylerApiImpl.svc/categories</path>
+            <summary>
+            Returns all report categories
+            </summary>
+            <returns name="categories">JSON array of all categories stored in the database.</returns>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.getCategoryById(System.String)">
+            <name>Get Category By ID</name>
+            <method>GET</method>
+            <path>/TylerApiImpl.svc/categories/{id}</path>
+            <summary>
+            Returns a category for the given ID, or null if it doesn't exist.
+            </summary>
+            <returns name="categories">JSON string of the category object</returns>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.addCategory(System.IO.Stream)">
+            <name>Add a Category</name>
+            <method>POST</method>
+            <path>/TylerApiImpl.svc/categories/addCategory</path>
+            <summary>
+            Persists a newc category to the database.
+            </summary>
+            <param name="categoryJson">a JSON String of the category to be added.</param>
+            <returns name="id">Int ID of the category after it is added, -1 if the category was not successfully added.</returns>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.updateCategory(System.IO.Stream)">
+            <name>Update a Category</name>
+            <method>PUT</method>
+            <path>/TylerApiImpl.svc/categories/updateCategory</path>
+            <summary>
+            Updates an existing category.
+            </summary>
+            <param name="categoryJson">a JSON String of the category to be updated</param>
+            <returns name="id">Int ID of the category after it is successfully updated, -1 if the category doesn't exist.</returns>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.deleteCategory(System.String)">
+            <name>Delete a Category By ID</name>
+            <method>DELETE</method>
+            <path>/TylerApiImpl.svc/categories/deleteCategory/{id}</path>
+            <summary>
+            Deletes a category by ID
+            </summary>
+            <param name="id">Integer of category ID to delete</param>
+            <returns name="result">Boolean TRUE if delete is successful, FALSE if the delete fails or the category isn't found.</returns>
+        </member>
+    </members>
+</doc>

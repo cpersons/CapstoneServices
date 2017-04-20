@@ -27,6 +27,16 @@
             </summary>
             <returns name="report">JSON serialized list of reports.</returns>
         </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.getStubbedReportsByUserId(System.String)">
+            <name>Lookup Report Stubs By User ID</name>
+            <method>GET</method>
+            <path>/TylerApiImpl.svc/reports/stubsByUserId/{id}</path>
+            <summary>
+            Returns a list of stubbed reports associated with a user based on his or her role.
+            </summary>
+            <param name="id">int of the user's ID</param>
+            <returns name="report">JSON serialized list of reports.</returns>
+        </member>
         <member name="M:TylerRestAPI.TylerApiFacade.getReportById(System.String)">
             <name>Lookup Report By ID</name>
             <method>GET</method>
@@ -163,6 +173,17 @@
             </summary>
             <param name="id">Integer of category ID to delete</param>
             <returns name="result">Boolean TRUE if delete is successful, FALSE if the delete fails or the category isn't found.</returns>
+        </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.getRemindersToday">
+            <name>Get Email Reminders For Today</name>
+            <method>GET</method>
+            <path>/TylerApiImpl.svc/reports/reminderToday</path>
+            <summary>
+            Returns a list of all the Email Reminders which are supposed to be sent today.
+            *NOTE* This REST call is only added for function demonstration in video; the function
+            normally runs automatically on the server every day.
+            </summary>
+            <returns name="reminders">JSON string of the email reminders due today</returns>
         </member>
     </members>
 </doc>

@@ -28,6 +28,16 @@
             </summary>
             <returns name="report">JSON serialized list of reports.</returns>
         </member>
+        <member name="M:TylerRestAPI.TylerApiFacade.getStubbedReportsByUserId(System.String)">
+            <name>Lookup Report Stubs By User ID</name>
+            <method>GET</method>
+            <path>/TylerApiImpl.svc/reports/stubsByUserId/{id}</path>
+            <summary>
+            Returns a list of stubbed reports associated with a user based on his or her role.
+            </summary>
+            <param name="id">int of the user's ID</param>
+            <returns name="report">JSON serialized list of reports.</returns>
+        </member>
         <member name="M:TylerRestAPI.TylerApiFacade.getReportById(System.String)">
             <name>Lookup Report By ID</name>
             <method>GET</method>

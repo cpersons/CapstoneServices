@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TylerEfLibrary.Model
+namespace TylerEfLibrary
 {
     /*  ReportStub allows for faster results return when searching for reports.
      *  This allows us to return simple uniquely identifying info regarding the
@@ -20,6 +20,8 @@ namespace TylerEfLibrary.Model
         public string ReportName { get; set; }
         public DateTime? EmailReminderDate { get; set; }
         public DateTime? DueDate { get; set; }
+
+        public ReportStub() { }
 
         //basic constructor
         public ReportStub(int id, string reportName, DateTime? emailReminderDate, DateTime? dueDate)

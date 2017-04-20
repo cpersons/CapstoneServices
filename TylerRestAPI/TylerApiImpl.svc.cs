@@ -70,6 +70,17 @@ namespace TylerRestAPI
             }
         }
 
+        public Stream getStubbedReportsByUserId(string id) {
+            try
+            {
+                return jsonResponse(rf.getStubReportsByUserId(Int32.Parse(id)));
+            }
+            catch(Exception e)
+            {
+                return null;
+            }
+        }
+
         public Stream getUpcomingReportsForUser(string id) {
             try
             {

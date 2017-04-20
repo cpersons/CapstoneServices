@@ -39,6 +39,19 @@ namespace TylerRestAPI
         [WebInvoke(UriTemplate = "reports", Method = "GET", ResponseFormat = WebMessageFormat.Json)]
         Stream getReports();
 
+        /// <name>Lookup Report Stubs By User ID</name>
+        /// <method>GET</method>
+        /// <path>/TylerApiImpl.svc/reports/stubsByUserId/{id}</path>
+        /// <summary>
+        /// Returns a list of stubbed reports associated with a user based on his or her role.
+        /// </summary>
+        /// <param name="id">int of the user's ID</param>
+        /// <returns name="report">JSON serialized list of reports.</returns>
+        [OperationContract]
+        [WebInvoke(UriTemplate = "reports/stubsByUserId/{id}", Method = "GET", ResponseFormat = WebMessageFormat.Json)]
+        Stream getStubbedReportsByUserId(string id);
+
+
         /// <name>Lookup Report By ID</name>
         /// <method>GET</method>
         /// <path>/TylerApiImpl.svc/reports/reportById/{id}</path>

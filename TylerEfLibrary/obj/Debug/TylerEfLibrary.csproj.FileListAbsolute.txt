@@ -32,3 +32,15 @@ C:\Users\alexr\Documents\School\capstone\Project\cse485Capstone\Backend\TylerEF\
 C:\Users\alexr\Documents\School\capstone\Project\cse485Capstone\Backend\TylerEF\TylerEfLibrary\obj\Debug\TylerEfLibrary.csprojResolveAssemblyReference.cache
 C:\Users\alexr\Documents\School\capstone\Project\cse485Capstone\Backend\TylerEF\TylerEfLibrary\obj\Debug\TylerEfLibrary.dll
 C:\Users\alexr\Documents\School\capstone\Project\cse485Capstone\Backend\TylerEF\TylerEfLibrary\obj\Debug\TylerEfLibrary.pdb
+A:\Development\School\Capstone Project\CapstoneServices\TylerEfLibrary\obj\Debug\TylerEfLibrary.csprojResolveAssemblyReference.cache
+A:\Development\School\Capstone Project\CapstoneServices\TylerEfLibrary\obj\Debug\TylerEfLibrary.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerEfLibrary\obj\Debug\TylerEfLibrary.pdb
+A:\Development\School\Capstone Project\CapstoneServices\TylerEfLibrary\bin\Debug\TylerEfLibrary.dll.config
+A:\Development\School\Capstone Project\CapstoneServices\TylerEfLibrary\bin\Debug\TylerEfLibrary.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerEfLibrary\bin\Debug\TylerEfLibrary.pdb
+A:\Development\School\Capstone Project\CapstoneServices\TylerEfLibrary\bin\Debug\EntityFramework.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerEfLibrary\bin\Debug\EntityFramework.SqlServer.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerEfLibrary\bin\Debug\Newtonsoft.Json.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerEfLibrary\bin\Debug\EntityFramework.xml
+A:\Development\School\Capstone Project\CapstoneServices\TylerEfLibrary\bin\Debug\EntityFramework.SqlServer.xml
+A:\Development\School\Capstone Project\CapstoneServices\TylerEfLibrary\bin\Debug\Newtonsoft.Json.xml

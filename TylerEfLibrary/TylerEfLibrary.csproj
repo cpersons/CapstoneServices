@@ -59,6 +59,7 @@
     <Compile Include="Controller\CategoryFunctions.cs" />
     <Compile Include="Controller\StateFunctions.cs" />
     <Compile Include="Model\ModelType.cs" />
+    <Compile Include="Model\ReportStub.cs" />
     <Compile Include="Model\tblReportRole.cs" />
     <Compile Include="Model\tblRole.cs" />
     <Compile Include="Model\tblUser.cs" />

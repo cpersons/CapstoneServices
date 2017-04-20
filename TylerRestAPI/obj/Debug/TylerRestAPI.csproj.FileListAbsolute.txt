@@ -79,3 +79,31 @@ C:\Users\alexr\Documents\School\capstone\Project\cse485Capstone\Backend\TylerEF\
 C:\Users\alexr\Documents\School\capstone\Project\cse485Capstone\Backend\TylerEF\TylerRestAPI\obj\Debug\TylerRestAPI.csprojResolveAssemblyReference.cache
 C:\Users\alexr\Documents\School\capstone\Project\cse485Capstone\Backend\TylerEF\TylerRestAPI\obj\Debug\TylerRestAPI.dll
 C:\Users\alexr\Documents\School\capstone\Project\cse485Capstone\Backend\TylerEF\TylerRestAPI\obj\Debug\TylerRestAPI.pdb
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\obj\Debug\TylerRestAPI.csprojResolveAssemblyReference.cache
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\obj\Debug\TylerRestAPI.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\obj\Debug\TylerRestAPI.pdb
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\ApplicationInsights.config
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\TylerRestAPI.dll.config
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\TylerRestAPI.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\TylerRestAPI.pdb
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\api_doc.XML
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\EntityFramework.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\EntityFramework.SqlServer.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\Microsoft.AI.Agent.Intercept.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\Microsoft.AI.DependencyCollector.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\Microsoft.AI.Web.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\Microsoft.AI.WindowsServer.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\Microsoft.ApplicationInsights.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\Newtonsoft.Json.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\TylerEfLibrary.dll
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\TylerEfLibrary.pdb
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\EntityFramework.xml
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\EntityFramework.SqlServer.xml
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\Microsoft.AI.DependencyCollector.xml
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\Microsoft.AI.Web.xml
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\Microsoft.AI.WindowsServer.xml
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\Microsoft.ApplicationInsights.xml
+A:\Development\School\Capstone Project\CapstoneServices\TylerRestAPI\bin\Newtonsoft.Json.xml

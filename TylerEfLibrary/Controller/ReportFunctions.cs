@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace TylerEfLibrary
 {
     public class ReportFunctions
@@ -25,12 +26,14 @@ namespace TylerEfLibrary
         }
 
         //Get report stubs
-        public void getStubReports(int id) {
+        public List<ReportStub> getStubReportsByUserId(int id) {
             var reports = (from r in db.tblReports
                            join rr in db.tblReportRoles on r.ID equals rr.reportId
                            join ur in db.tblUserRoles on rr.roleId equals ur.roleId
                            where ur.userId == id
-                           select new test()).Distinct();    
+                           select new ReportStub(){ ID = r.ID, DueDate=r.DueDate, EmailReminderDate = r.EmailReminderDate, ReportName = r.ReportName}).Distinct();
+            List<ReportStub> stubs = reports.ToList<ReportStub>();
+            return stubs;    
         }
 
         //Update a report

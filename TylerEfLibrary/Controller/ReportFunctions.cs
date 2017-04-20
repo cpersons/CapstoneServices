@@ -24,6 +24,15 @@ namespace TylerEfLibrary
             return reports.ToList<tblReport>();
         }
 
+        //Get report stubs
+        public void getStubReports(int id) {
+            var reports = (from r in db.tblReports
+                           join rr in db.tblReportRoles on r.ID equals rr.reportId
+                           join ur in db.tblUserRoles on rr.roleId equals ur.roleId
+                           where ur.userId == id
+                           select new test()).Distinct();    
+        }
+
         //Update a report
         public int updateReport(tblReport report) {
             tblReport temp = db.tblReports.Find(report.ID);
@@ -149,6 +158,8 @@ namespace TylerEfLibrary
         }
 
     }
+
+
 
     class DueDateSorter : Comparer<tblReport>
     {
